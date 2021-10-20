@@ -1,0 +1,43 @@
+.fondo {
+    background-color: rgb(144, 208, 250);
+}
+
+.color1 {
+    background-color: rgb(255, 191, 212);
+    margin: 0px;
+    padding: 0px;
+}
+
+.color2 {
+    background-color: rgb(95, 224, 112);
+    margin: 0px;
+    padding: 0px;
+}
+
+.color3 {
+    background-color: rgb(250, 255, 180);
+    margin: 0px;
+    padding: 0px;
+}
+
+.color4 {
+    background-color: rgb(163, 147, 255);
+    margin: 0px;
+    padding: 0px;
+}
+
+.color5 {
+    background-color: rgb(129, 152, 255);
+    margin: 0px;
+    padding: 0px;
+}
+
+.ej {
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    
+}
+table{
+    width: 100%;
+}
+

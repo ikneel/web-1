@@ -1,0 +1,38 @@
+ul{
+   
+}
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(171, 202, 151);
+}
+
+.fondo1{
+    background-color: rgb(255, 255, 255);
+}
+
+.fondo2{
+    background-color: rgb(187, 141, 141);
+}
+
+.fondo3{
+    background-color: rgb(239, 101, 252);
+}
+
+.texto1{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+}
+.texto2{
+    font-size: 1em;
+    color: black;
+    text-align: left;
+}
+.imagen{
+    width: 90%;
+    text-align: center;
+}
+.imagenbod{
+    background-image: url(media/vicky.jpg);
+}    
