@@ -72,7 +72,6 @@ table{
     src: url(fuente/HappyHalloween.ttf);
 }
 .borde{
-    border-top: 0px;
     border: 20px solid white;
     border-radius: 15px;
 }
