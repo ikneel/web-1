@@ -1,2 +1,1 @@
-# web-1
-proyecto de desarrollo temporal
+web-1
