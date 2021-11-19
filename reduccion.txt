@@ -1,0 +1,86 @@
+from tkinter import ttk
+from tkinter import *
+
+class reduccion:
+    def __init__(self, window):
+        self.wind = window
+        self.wind.title("Metodo de reduccion Quin McCluskey")
+
+        frame = LabelFrame(self.wind, text="Variables y minterminos:", fg="blue", background = "dark turquoise")
+        frame.grid(row=0, column=0)
+
+        Label(frame, text="Ingrese el numero de variables: ", fg="blue").grid(row=1, column=0)
+        self.variables = Entry(frame, bg = "green", fg="red")
+        self.variables.focus()
+        self.variables.grid(row=1, column=1)
+
+        Label(frame, text="Ingrese los minterminos en orden y separados pór comas: ", fg="blue").grid(row=2, column=0)
+        self.minterminos = Entry(frame, bg = "green", fg="red")
+        self.minterminos.grid(row=2, column=1)
+
+        ttk.Button(frame, text="Funcion reducida: ", command= self.datos).grid(row=3, column=1)
+
+        self.massage = Label(text="", fg="blue")
+        self.massage.grid(row=4, column=0)
+
+    def datos(self):
+        m = list(map(int, self.minterminos.get().split(',')))
+        v = int(self.variables.get())
+        h = []
+        j = []
+        k = []
+        l = []
+        c1 = v
+        c2 = 1
+        c3 = 0
+        c4 = 0
+        c5 = 0
+
+        for i in range(2 ** v):
+            ls = []
+            h.append(ls)
+
+        for e in range(v):
+            if c1 > 0:
+                for i in range(2 ** v):
+                    if c2 <= ((2 ** c1) / 2):
+                        h[i].append(0)
+                        c2 += 1
+                    else:
+                        h[i].append(1)
+                        c2 += 1
+
+                    if c2 > (2 ** c1):
+                        c2 = 1
+                c1 -= 1
+
+        while c3 <= v:
+            for i in m:
+                for e in h[i]:
+                    if e == 1:
+                        c4 += 1
+                if c3 == c4:
+                    j.append(h[i])
+                    k.append(i)
+                c4 = 0
+            c3 += 1
+        m.clear()
+        for i in k:
+            m.append(i)
+        k.clear()
+
+
+
+        print(h)
+        self.massage["text"] = "criko"
+        print(m)
+
+        print(j)
+        print(k)
+        print(c3)
+
+if __name__ == "__main__":
+    window = Tk()
+    aplicacion = reduccion(window)
+    window.mainloop()
+
