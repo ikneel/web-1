@@ -1,0 +1,234 @@
+from tkinter import ttk
+from tkinter import *
+
+class reduccion:
+    def __init__(self, window):
+        self.wind = window
+        self.wind.title("Metodo de reduccion Quin McCluskey")
+
+        frame = LabelFrame(self.wind, text="Variables y minterminos:", fg="blue", background = "dark turquoise")
+        frame.grid(row=0, column=0)
+
+        Label(frame, text="Ingrese el numero de variables: ", fg="blue").grid(row=1, column=0)
+        self.variables = Entry(frame, bg = "green", fg="red")
+        self.variables.focus()
+        self.variables.grid(row=1, column=1)
+
+        Label(frame, text="Ingrese los minterminos en orden y separados pór comas: ", fg="blue").grid(row=2, column=0)
+        self.minterminos = Entry(frame, bg = "green", fg="red")
+        self.minterminos.grid(row=2, column=1)
+
+        ttk.Button(frame, text="Funcion reducida: ", command= self.datos).grid(row=3, column=1)
+
+        self.massage = Label(text="", fg="blue")
+        self.massage.grid(row=4, column=0)
+
+    def datos(self):
+        m = list(map(int, self.minterminos.get().split(',')))
+        v = int(self.variables.get())
+        h = []
+        j = []
+        k = []
+        l = []
+        n = []
+        f = []
+        q = []
+        x = []
+        y = []
+        z = []
+        w = []
+        s = []
+        c1 = v
+        c2 = 1
+        c3 = 0
+        c4 = 0
+        c6 = 0
+        c7 = 0
+        c8 = 0
+        c9 = 0
+        c10 = 0
+        c11 = 0
+
+        for i in range(2 ** v):
+            ls = []
+            h.append(ls)
+
+        for e in range(v):
+            if c1 > 0:
+                for i in range(2 ** v):
+                    if c2 <= ((2 ** c1) / 2):
+                        h[i].append(0)
+                        c2 += 1
+                    else:
+                        h[i].append(1)
+                        c2 += 1
+
+                    if c2 > (2 ** c1):
+                        c2 = 1
+                c1 -= 1
+
+        while c3 <= v:
+            for i in m:
+                for e in h[i]:
+                    if e == 1:
+                        c4 += 1
+                if c3 == c4:
+                    j.append(h[i])
+                    k.append(i)
+                c4 = 0
+            c3 += 1
+        m.clear()
+        for i in k:
+            m.append(i)
+        k.clear()
+
+        for r in range(v):
+
+            for a in j[(len(j) - 1)]:
+                if a == 1:
+                    c7 += 1
+            if c7 == 0:
+                break
+            print(c7)
+
+            for i in range(len(j)):
+                c5 = 0
+                for e in j[i]:
+                    if e == 1:
+                        c5 += 1
+
+                if c7 == c5:
+                    break
+                for o in range(len(j)):
+                    for u in j[o]:
+                        if u == 1:
+                            c6 += 1
+                    if c6 == (c5 + 1):
+                        for t in range(v):
+
+
+
+                            if j[i][t] == j[o][t]:
+                                f.append(j[i][t])
+                                x.append(j[i][t])
+                                y.append(j[o][t])
+                            if j[i][t] != j[o][t]:
+                                f.append("-")
+                                x.append(j[i][t])
+                                y.append(j[o][t])
+                                c8 += 1
+                        if c8 > 1:
+                            f = []
+                            x = []
+                            y = []
+                        if c8 == 1:
+                            n.append(m[i])
+                            n.append(m[o])
+                            q.append(m[i])
+                            q.append(m[o])
+                            z.append(x)
+                            z.append(y)
+                            x = []
+                            y = []
+
+                            l.append(n)
+                            n = []
+                            k.append(f)
+
+                            f = []
+                        c8 = 0
+                    c6 = 0
+            c7 = 0
+            print(q)
+
+            print(j)
+            print(z)
+            if r >= 1:
+                for i in range(len(j)):
+                    for e in range(len(z)):
+                        for o in range(len(j[i])):
+                            if j[i][o] == z[e][o]:
+                                c10 += 1
+                        if c10 == 5:
+                            c11 += 1
+                        c10 = 0
+                    if c11 == 0:
+                        w.append(j[i])
+                        s.append(m[i])
+                    c11 = 0
+            print(w)
+            print(s)
+            q = []
+            z = []
+
+            j.clear()
+            for e in k:
+                  j.append(e)
+            k = []
+
+            m.clear()
+            for e in l:
+                  m.append(e)
+            l = []
+
+
+
+            r = len(j) - 1
+            for i in range(r):
+                if i >= len(j):
+                    break
+                for o in range(r):
+
+                    if (o + 1) >= len(j):
+                        break
+
+                    for e in range(len(j[i])):
+                        if i != (o + 1):
+                            if j[i][e] == j[o + 1][e]:
+                                c9 += 1
+                    if len(j) == 2:
+                        for e in range(len(j[i])):
+                            if i != (o + 1):
+                                if j[i][e] == j[o + 1][e]:
+                                    c9 += 1
+                        id = o + 1
+                        j.pop(id)
+                        m.pop(id)
+
+                    if c9 == 5:
+                        id = o + 1
+                        j.pop(id)
+                        m.pop(id)
+                    c9 = 0
+
+            print(m)
+            print(j)
+            print(len(m))
+            print(len(j))
+
+
+
+
+        print(h)
+        self.massage["text"] = "criko"
+        print(m)
+
+        print(j)
+
+        print(c3)
+        print(n)
+        print(l)
+        print(k)
+        print(len(l))
+        print(len(k))
+        for i in range(len(j)):
+            w.append(j[i])
+        for i in range(len(m)):
+            s.append(m[i])
+        print(s)
+        print(w)
+
+if __name__ == "__main__":
+    window = Tk()
+    aplicacion = reduccion(window)
+    window.mainloop()
