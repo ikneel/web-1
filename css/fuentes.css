@@ -1,0 +1,47 @@
+/*----Fuentes Main----*/
+
+@font-face {
+    font-family: Constantine;
+    src: url(../fuentes/Constantine.ttf);
+}
+
+@font-face {
+    font-family: FiraBook;
+    src: url(../fuentes/FiraSans-Book.otf);
+}
+
+@font-face {
+    font-family: FiraBookI;
+    src: url(../fuentes/FiraSans-BookItalic.otf);
+}
+
+@font-face {
+    font-family: FiraRegular;
+    src: url(../fuentes/FiraSans-Regular.otf);
+}
+
+@font-face {
+    font-family: gillsans;
+    src: url(../fuentes/gillsans.ttf);
+}
+
+@font-face {
+    font-family: MerryBlack;
+    src: url(../fuentes/Merriweather-Black.ttf);
+}
+
+@font-face {
+    font-family: MerryItalic;
+    src: url(../fuentes/Merriweather-Italic.ttf);
+}
+
+@font-face {
+    font-family: MarryLight ;
+    src: url(../fuentes/Merriweather-Light.ttf);
+}
+
+@font-face {
+    font-family: MerryRegular;
+    src: url(../fuentes/Merriweather-Regular.ttf);
+}
+

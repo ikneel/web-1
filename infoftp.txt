@@ -1,5 +1,0 @@
-credenciales para conectarme por ftp
-host name: files.000webhost.com
-port: 21
-username: scared-session
-password: Ik930003256

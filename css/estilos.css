@@ -1,62 +1,107 @@
+@import url('reset.css');
+@import url('fuentes.css');
 
-            /* hoja de estilo para ser invocada en cualquier documento */
-            body{
-                /*margin: 0;*/
-            }
+/* Estilos generales */
 
+body{
+    background-color: white;
+}
 
-           
-            /*colores de fondo*/
-            .fondorojo{
-                background-color: #e74c3c;
-            }
-            .fondoazul{
-                background-color: #3498db;
-            }
-            .fondomorado{
-                background-color: #9b59b6;
-            }
-            .fondoverde{
-                background-color: #1abc9c;
-            }
-            .fondoamarillo{
-                background-color: #f1c40f;
-            }
-            .fondoblanco{
-                background-color: #ecf0f1;
-            }
-            .fondoesmeralda{
-                background-color: #2ecc71;
-            }
+a{   text-decoration: none;
+    color:white;
+}
 
-            .transparente{
-                background-color: transparent;
-            }
+a:hover{
+    text-decoration: none;
+}
 
-            
-            /*color de letra*/
-            .letrablanca{
-                color:white;
-            }
-            .letraamarilla{
-                color:yellow;
-            }
-            
-            /*borde para elemento*/
-            .borderojo_puntos{
-                border:5px dashed red;
-            }
-            .bordenegro_solido{
-                border:3px solid black;
-            }
-            .bordeblanco{
-                border:2px solid white;
-            }
-            
-            
-           
-            /* todas las celdas del documento obtienen este estilo*/
-            td{ 
-                background-color: aqua;
-                color:rgb(0, 0, 0);
-            }
+#wrap{
+    width: 960px;
+    margin: auto;
+    clear: both;
+    
+}
+
+/*Header*/
+header{
+    width: 100%;
+    float: left;
+    @font-face
+    font-family: sourcesans;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #23324f 0%, #23324f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #23324f 0%, #23324f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #23324f 0%, #23324f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e4e0e0',GradientType=0 ); /* IE6-9 */
+        box-shadow: 0px 3px 5px #000;
+}
+
+#subheader{
+    width: 960px;
+    margin: auto;
+    
+}
+
+#logotipo{
+    
+    float: left;
+    width: 300px;
+    padding: 10px 0px;
+    
+}
+
+#logotipo a{
+    font-family:sourcesans;
+    font-size: 50px;
+    color: #000;
+    
+}
+
+#logotipo a:hover{text-decoration: none;}
+
+/*--Menu --*/
+
+header #subheader nav{
+    float: left;
+    width: 660px;
+    padding: 30px 0px;
+    text-align: center;
+    
+}
+
+header #subheader nav ul li{
+    display: inline;/*elemtos mostrados en linea*/
+    font-family: sourcesans;
+     
+    
+}
+
+header #subheader nav ul li a {
+    color:white;
+    font-size:18px;
+    padding: 10px;
+    border-radius:2px;
+    
+}
+
+header #subheader nav ul li a:hover{
+    color: white;
+    background: #787e80;
+    text-decoration: none;
+}
+
+.titulos {
+    font-size: 40px;
+    text-align: left;
+    font-family: Constantine;
+    color: rgb(255, 255, 255);
+    margin: 3%;
+   
+}
+
+.menu {
+    font-size: 20px;
+    font-family: Constantine;
+    color: rgb(255, 255, 255);
+   
+}
