@@ -37,7 +37,7 @@ header{
 }
 
 #subheader{
-    width: 960px;
+    width: 90%;
     margin: auto;
     
 }
@@ -45,16 +45,18 @@ header{
 #logotipo{
     
     float: left;
-    width: 300px;
+    width: 30%;
     padding: 10px 0px;
+    text-align: center;
     
 }
 
 #logotipo a{
     font-family:sourcesans;
-    font-size: 50px;
-    color: #000;
-    
+    font-size: 40px;
+    color: white;
+    font-family: Constantine;
+    margin: 3%;
 }
 
 #logotipo a:hover{text-decoration: none;}
@@ -63,8 +65,8 @@ header{
 
 header #subheader nav{
     float: left;
-    width: 660px;
-    padding: 30px 0px;
+    width: 60%;
+    padding: 3% 0%;
     text-align: center;
     
 }
@@ -90,14 +92,7 @@ header #subheader nav ul li a:hover{
     text-decoration: none;
 }
 
-.titulos {
-    font-size: 40px;
-    text-align: left;
-    font-family: Constantine;
-    color: rgb(255, 255, 255);
-    margin: 3%;
-   
-}
+
 
 .menu {
     font-size: 20px;
