@@ -1,0 +1,74 @@
+body{
+    background-image: url(../media/mur.jfif);
+    background-size: 90% ;
+    margin-left: 0%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+table{
+    width: 100%;    
+    border-spacing: 0px
+}
+
+p{
+    font-size: 30px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.divs{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.borde1{
+    border: outset grey 5px;
+}
+.borde2{
+    border: outset grey 8px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+.borde3{
+    border: outset grey 2px;
+
+}
+
+.texto1{
+    color: aliceblue;
+    
+}
+.texto2{
+    text-align: right;
+
+}
+
+.color1{
+    background-color: orangered;
+
+}
+.color2{
+    background-color: rgb(84, 154, 239);
+
+}
+.color3{
+    background-color: rgb(125, 85, 172);
+
+}
+.color4{
+    background-color: yellow;
+
+}
+.color5{
+    background-color: green;
+
+}
+
+.color6{
+    background-color: white;
+
+}
+.padd{
+    padding: 3px;
+}
