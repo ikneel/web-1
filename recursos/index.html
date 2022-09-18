@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="Author" content="ikneel">
+    <link rel="stylesheet" href="estilos2.css">
+    <link rel="shortcut icon" href="media/br2.jfif">
+    <title>Inicio en JS</title>
+    <script>
+        alert("Saludos")
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <center>
+            <h1>
+                Pruebas Java Script
+            </h1>
+        </center>
+    </div>
+
+    <script>
+        function imagen(src, width, height, alt) {
+            var a = document.createElement("img");
+            a.src = src
+            a.width = width;
+            a.height = height;
+            a.alt = alt;
+            document.body.appendChild(a);
+        }
+    </script>
+    <br>
+    <hr>
+    <br>
+    <section>
+        <table>
+            <td align="center">
+                <button onclick=" imagen('media/cab.jpg',300,300,'JavaScriptImage');"> touch me</button>
+            </td>
+            <td align="center">
+                <button onclick=" imagen2('media/az.jpg',300,300,'JavaScriptImage');"> touch me harder</button>
+            </td>
+            <td align="center">
+                <button onclick=" imagen3('media/mur.jfif',300,300,'JavaScriptImage');"> touch me more harder</button>
+            </td>
+        </table>
+        
+        
+        
+        <br>
+        <hr>
+        <br>
+        <center>
+            <button onclick="despedida()"> Presiona para decirte adios</button>
+        </center>
+    </section>
+    <br>
+    <hr>
+
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
