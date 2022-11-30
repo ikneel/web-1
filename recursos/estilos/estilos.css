@@ -1,0 +1,55 @@
+body{
+    padding-top: 1%;
+    
+}
+
+.imgf{
+    background-image: url(../media/lee.jfif);
+    background-size: cover;
+    
+}
+
+.fond1{
+    background-color: white;
+   
+}
+.borde{
+    border: 5px solid red;
+    border-radius: 15px;
+    padding: 0%;
+    margin: 0%;
+    
+    
+}
+.imagcab{
+    height: 25rem;
+    width: 25rem;
+    border-radius: 11px;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+.separacion{
+    padding-left: 30%;
+    padding-right: 30%;
+   
+}
+.separacion2{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+#table2 table{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.lists{
+    margin: 0%;
+}

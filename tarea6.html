@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="Author" content="ikneel">
+    <link rel="stylesheet" href="recursos/estilos/estilos2.css">
+    <link rel="shortcut icon" href="media/br2.jfif">
+    <title>Tarea 6</title>
+    <script>
+        alert("Saludos")
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <div class="div2">
+            <center>
+                <h1 class="fond">
+                    Pruebas Java Script
+                </h1>
+            </center>
+        </div>
+    </div>
+
+    <script>
+        function imagen(src, width, height, alt) {
+            var a = document.createElement("img");
+            a.src = src
+            a.width = width;
+            a.height = height;
+            a.alt = alt;
+            document.body.appendChild(a);
+        }
+    </script>
+
+    <hr>
+    <br>
+    <section class="fond">
+        <table>
+            <td align="center">
+                <button onclick=" imagen('recursos/media/cab.jpg',300,300,'JavaScriptImage');"> touch me</button>
+            </td>
+            <td align="center">
+                <button onclick=" imagen2('recursos/media/az.jpg',300,300,'JavaScriptImage');"> touch me harder</button>
+            </td>
+            <td align="center">
+                <button onclick=" imagen3('recursos/media/mur.jfif',300,300,'JavaScriptImage');"> touch me more harder</button>
+            </td>
+        </table>    
+        <br>
+        <hr>
+        <br>
+        <center>
+            <button onclick="despedida()"> Presiona para decirte adios</button>
+        </center>
+        <hr>
+        <table>
+            <td align="center">
+                <a href="tarea5.html"><h3>Tarea 5</h3></a>
+            </td>
+            <td align="center">
+                <a href="index.html"><h3>Da click para regresar a la pagina principal</h3></a>
+            </td>
+            <td align="center">
+                <a href="tarea7.html"><h3>Tarea 7</h3></a>
+            </td>
+        </table> 
+    </section>
+    <br>
+    <hr>
+</body>
+<script src="recursos/js/app.js"></script>
+
+</html>

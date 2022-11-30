@@ -1,0 +1,33 @@
+body{
+    background-image: url(../media/br.jfif);
+}
+table{
+    width: 100%;
+}
+td{
+    width: 33.33%;
+}
+
+.fond{
+    background-color: white; 
+    border: 2px solid violet;
+
+    border-radius: 15px;
+   
+}
+section{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.div2{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}

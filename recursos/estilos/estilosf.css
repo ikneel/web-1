@@ -1,0 +1,23 @@
+body{
+    background-image: url(../media/tiendaf.jpeg);
+    background-size: 100%;
+}
+#tabla2 table{
+    width: 100%;
+}
+
+.fondo1{
+    background-color: white;
+    border: 3px solid violet;
+    border-radius: 10px;
+}
+.imag{
+    border-radius: 10px;
+
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
